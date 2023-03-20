@@ -52,6 +52,14 @@ function InfoForm() {
                 className=" border border-black rounded-xl"
                 placeholder="eg.)https://www.linkedin.com/in/shrivastavpriyam/"
             /><br/>
+            <label>
+                Career Outcome:
+            </label><br/>
+            <textarea
+                type={Text}
+                className=" border border-black rounded-xl"
+                placeholder="What you want to achieve in your career"
+            /><br/>
         </>
     )
 }
