@@ -6,7 +6,9 @@ import InfoForm from "./infoform";
 function Form() {
     return(
         <>
-            <InfoForm/>
+            <div className=" text-center p-10 flex flex-col">
+                <InfoForm/>
+            </div>
         </>
     )
 }
