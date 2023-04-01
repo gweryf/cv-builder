@@ -3,20 +3,28 @@ import React from "react";
 import { useState } from "react";
 
 function InfoForm() {
+
+
+    function handleChange(event) {
+        setDetails({...details, [event.target.name]: event.target.value})
+    }
+
     return(
         <>
             <label>
                 Name:
             </label><br/>
             <input
+                name="name"
                 className=" border border-black rounded-xl" 
-                type={Text}
+                type='text'
                 placeholder='eg.) Priyam Shrivastava'/><br/>
             <label>
                 Title:
             </label><br/>
             <input
-                type={Text}
+                name="title"
+                type='text'
                 className=" border border-black rounded-xl"
                 placeholder="eg.)Frontend Developer"
             /><br/>
@@ -24,6 +32,7 @@ function InfoForm() {
                 Email:
             </label><br/>
             <input
+                name="email"
                 type="email"
                 className=" border border-black rounded-xl"
                 placeholder="eg.)xxx@xxx.com"
@@ -32,7 +41,8 @@ function InfoForm() {
                 Phone:
             </label><br/>
             <input
-                type={Number}
+                name="phone"
+                type='number'
                 className=" border border-black rounded-xl"
                 placeholder="eg.)0123456789"
             /><br/>
@@ -40,7 +50,8 @@ function InfoForm() {
                 Github URL:
             </label><br/>
             <input
-                type={Text}
+                name="github"
+                type='text'
                 className=" border border-black rounded-xl"
                 placeholder="eg.)https://github.com/gweryf"
             /><br/>
@@ -48,7 +59,8 @@ function InfoForm() {
                 LinkedIn URL:
             </label><br/>
             <input
-                type={Text}
+                name="linkedin"
+                type='text'
                 className=" border border-black rounded-xl"
                 placeholder="eg.)https://www.linkedin.com/in/shrivastavpriyam/"
             /><br/>
@@ -56,7 +68,8 @@ function InfoForm() {
                 Career Outcome:
             </label><br/>
             <textarea
-                type={Text}
+                name="descrp"
+                type='text'
                 className=" border border-black rounded-xl"
                 placeholder="What you want to achieve in your career"
             /><br/>
