@@ -10,6 +10,7 @@ function Form({addContract}) {
 
     function handleSubmit(event) {
         event.preventDefault()
+        console.log(details);
         addContract(details)
     }
 

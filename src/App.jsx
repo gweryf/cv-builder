@@ -9,7 +9,7 @@ function App() {
   const [contracts, setContracts] = useState([])
 
   function addContract(details){
-    setContracts(...contracts, details)
+    setContracts(details)
   }
 
   console.log(contracts);
