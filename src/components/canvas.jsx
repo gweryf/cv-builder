@@ -7,7 +7,7 @@ import email from "../assets/email.png"
 
 function Canvas(props){
     return(
-        <div className=" mx-auto border p-4 max-w-xl max-h-xl shadow-lg my-7">
+        <div className=" border p-4 max-w-xl max-h-xl shadow-lg my-7">
             
             {/* Name */}
             <div className=" text-4xl font-bold p-4 text-center">
@@ -15,7 +15,7 @@ function Canvas(props){
             </div>
 
             {/* Contact Details */}
-            <div className=" flex gap-2 items-center justify-center">
+            <div className=" flex gap-2 items-center justify-center py-3  text-xs md:text-base">
                 <img src={phone} className=" w-7" alt="" />
                 {props.contracts.phone}
                 <a className=" cursor-pointer flex gap-2 items-center justify-center" href={props.contracts.linkedin}>
@@ -34,15 +34,76 @@ function Canvas(props){
             <div className=" text-xl font-semibold py-3 border-b border-gray-700">
                 Description
             </div>
-            <div>
+            <div className=" py-2 text-sm">
                 {props.contracts.descrp}
             </div>
 
             {/* Experience */}
-            <div>
+            <div className=" text-xl font-semibold py-3 border-b border-gray-700">
+                Experience
             </div>
-            <div>
-                {props.contracts.descrp}
+            <div className=" my-1">
+                <div className=" flex justify-between">
+                    <div className=" font-medium">{props.contracts.company1}</div>
+                    <div>{props.contracts.startDate1} - {props.contracts.endDate1}</div>
+                </div>
+                <div className=" text-sm">
+                    {props.contracts.position1}
+                </div>
+            </div>
+
+            <div className=" my-1">
+                <div className=" flex justify-between">
+                    <div className=" font-medium">{props.contracts.company2}</div>
+                    <div>{props.contracts.startDate2} - {props.contracts.endDate2}</div>
+                </div>
+                <div>
+                    {props.contracts.position2}
+                </div>
+            </div>
+
+            <div className=" my-1">
+                <div className=" flex justify-between">
+                    <div className=" font-medium">{props.contracts.company3}</div>
+                    <div>{props.contracts.startDate3} - {props.contracts.endDate3}</div>
+                </div>
+                <div>
+                    {props.contracts.position3}
+                </div>
+            </div>
+            <div className=" my-1">
+                <div className=" flex justify-between">
+                    <div className=" font-medium">{props.contracts.company4}</div>
+                    <div>{props.contracts.startDate4} - {props.contracts.endDate4}</div>
+                </div>
+                <div>
+                    {props.contracts.position4}
+                </div>
+            </div>
+
+            {/* Education */}
+            <div className=" text-xl font-semibold py-3 border-b border-gray-700">
+                Education
+            </div>
+
+            <div className=" my-1">
+                <div className=" flex justify-between">
+                    <div className=" font-medium">{props.contracts.university1}</div>
+                    <div>{props.contracts.coursestart1} - {props.contracts.courseend1}</div>
+                </div>
+                <div>
+                    {props.contracts.degree1}
+                </div>
+            </div>
+
+            <div className=" my-1">
+                <div className=" flex justify-between">
+                    <div className=" font-medium">{props.contracts.university2}</div>
+                    <div>{props.contracts.coursestart2} - {props.contracts.courseend2}</div>
+                </div>
+                <div>
+                    {props.contracts.degree2}
+                </div>
             </div>
         </div>
     )

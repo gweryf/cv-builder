@@ -17,8 +17,10 @@ function App() {
   return (
     <>
       <Header/>
-      <Form addContract={addContract}/>
-      <Canvas contracts={contracts} />
+      <div className=' md:flex justify-around'>
+        <Form addContract={addContract}/>
+        <Canvas contracts={contracts} />
+      </div>
     </>
   )
 }
