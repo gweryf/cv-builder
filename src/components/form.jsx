@@ -15,7 +15,7 @@ function Form({addContract}) {
     }
 
     return(
-        <div className=" border text-center p-4 max-w-xl max-h-xl shadow-lg my-7 bg-gray-50">
+        <div className=" mx-auto border text-center p-4 max-w-xl max-h-xl shadow-lg my-7 bg-gray-50">
             <form action="" onSubmit={handleSubmit}>
 
                 {/* personal details */}
@@ -29,7 +29,7 @@ function Form({addContract}) {
                 /><br/>
                 <input
                     name="phone"
-                    type="number"
+                    type="text"
                     onChange={handleChange}
                     placeholder="Phone Number"
                     className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
@@ -55,6 +55,7 @@ function Form({addContract}) {
                     onChange={handleChange}
                     className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
                 /><br/>
+                <textarea name="descrp" onChange={handleChange} className="my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800" rows="4" placeholder="Description"></textarea>
 
                 {/* Work Experience */}
                 <h3 className=" text-xl">Experience</h3>
