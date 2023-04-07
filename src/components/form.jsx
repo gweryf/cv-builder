@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-function Form() {
+function Form({addContract}) {
     const [details, UpdateDetails] = useState({})
 
     function handleChange(event) {
@@ -10,7 +10,7 @@ function Form() {
 
     function handleSubmit(event) {
         event.preventDefault()
-        console.log(details);
+        addContract(details)
     }
 
     return(
@@ -79,10 +79,7 @@ function Form() {
                     onChange={handleChange}
                     className=" border-solid border-black border-2"
                 /><br/>
-                <button
-                    type="submit"
-                    className=" rounded-lg border-2 border-black border-solid p-2"
-                >
+                <button type="submit" className=" rounded-lg border-2 border-black border-solid p-2">
                     Submit
                 </button>
             </form>

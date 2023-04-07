@@ -3,14 +3,22 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Header from './components/header'
 import Form from './components/form'
+import Canvas from './components/canvas'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [contracts, setContracts] = useState([])
+
+  function addContract(details){
+    setContracts(...contracts, details)
+  }
+
+  console.log(contracts);
 
   return (
     <>
       <Header/>
-      <Form/>
+      <Form addContract={addContract}/>
+      <Canvas contracts={contracts} />
     </>
   )
 }
