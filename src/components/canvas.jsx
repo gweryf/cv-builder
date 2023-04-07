@@ -8,9 +8,13 @@ import email from "../assets/email.png"
 function Canvas(props){
     return(
         <div className=" mx-auto border p-4 max-w-xl max-h-xl shadow-lg my-7">
+            
+            {/* Name */}
             <div className=" text-4xl font-bold p-4 text-center">
                 {props.contracts.name}
             </div>
+
+            {/* Contact Details */}
             <div className=" flex gap-2 items-center justify-center">
                 <img src={phone} className=" w-7" alt="" />
                 {props.contracts.phone}
@@ -25,12 +29,16 @@ function Canvas(props){
                 <img src={email} className=" w-7 h-6" alt="" />
                 {props.contracts.email} 
             </div>
-            <div>
-                
+
+            {/* Description */}
+            <div className=" text-xl font-semibold py-3 border-b border-gray-700">
+                Description
             </div>
             <div>
-                
+                {props.contracts.descrp}
             </div>
+
+            {/* Experience */}
             <div>
             </div>
             <div>
