@@ -7,7 +7,7 @@ import email from "../assets/email.png"
 
 function Canvas(props){
     return(
-        <div className=" border p-4 max-w-xl max-h-xl shadow-lg my-7">
+        <div className=" border p-4 w-full md:mx-20 self-start shadow-lg my-7">
             
             {/* Name */}
             <div className=" text-4xl font-bold p-4 text-center">

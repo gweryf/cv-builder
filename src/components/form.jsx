@@ -15,7 +15,7 @@ function Form({addContract}) {
     }
 
     return(
-        <div className="border text-center p-4 shadow-lg my-7 bg-gray-50">
+        <div className="border w-full md:mx-20 text-center p-4 shadow-lg my-7 bg-gray-50">
             <form action="" onSubmit={handleSubmit}>
 
                 {/* personal details */}
