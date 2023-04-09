@@ -23,9 +23,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Product Name Screen Shot](https://user-images.githubusercontent.com/105338002/219391654-5a67e3ff-c9a4-40eb-99c3-42aae6e25026.png)
+image.png
 
-As a web developer with [number of years] years of experience, I am passionate about creating dynamic and engaging web solutions. I am seeking a challenging role where I can leverage my technical expertise and creativity to build high-quality, user-focused web applications.
+Welcome to our CV builder website, where you can create a professional and polished CV in just a few simple steps. We understand that crafting a perfect CV can be a daunting task, which is why our platform offers a simple and user-friendly interface that guides you through the entire process.
+A CV builder website made using React.js and Tailwind CSS is a modern and intuitive platform designed to help users create professional and polished CVs with ease. React.js is a popular JavaScript library that enables the creation of dynamic and interactive user interfaces, while Tailwind CSS is a utility-first CSS framework that provides a comprehensive set of pre-designed styling options.
 
 ### Built With
 
