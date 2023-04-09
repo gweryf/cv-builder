@@ -42,39 +42,39 @@ function Canvas(props){
                 <div className=" text-xl font-semibold py-3 border-b border-gray-700">
                     Experience
                 </div>
-                <div className=" my-1">
+                <div className=" my-1 px-2">
                     <div className=" flex justify-between">
                         <div className=" font-medium">{props.contracts.company1}</div>
-                        <div>{props.contracts.startDate1} - {props.contracts.endDate1}</div>
+                        <div>{props.contracts.startDate1}-{props.contracts.endDate1}</div>
                     </div>
                     <div className=" text-sm">
                         {props.contracts.position1}
                     </div>
                 </div>
 
-                <div className=" my-1">
+                <div className=" my-1 px-2">
                     <div className=" flex justify-between">
                         <div className=" font-medium">{props.contracts.company2}</div>
-                        <div>{props.contracts.startDate2} - {props.contracts.endDate2}</div>
+                        <div>{props.contracts.startDate2}-{props.contracts.endDate2}</div>
                     </div>
                     <div>
                         {props.contracts.position2}
                     </div>
                 </div>
 
-                <div className=" my-1">
+                <div className=" my-1 px-2">
                     <div className=" flex justify-between">
                         <div className=" font-medium">{props.contracts.company3}</div>
-                        <div>{props.contracts.startDate3} - {props.contracts.endDate3}</div>
+                        <div>{props.contracts.startDate3}-{props.contracts.endDate3}</div>
                     </div>
                     <div>
                         {props.contracts.position3}
                     </div>
                 </div>
-                <div className=" my-1">
+                <div className=" my-1 px-2">
                     <div className=" flex justify-between">
                         <div className=" font-medium">{props.contracts.company4}</div>
-                        <div>{props.contracts.startDate4} - {props.contracts.endDate4}</div>
+                        <div>{props.contracts.startDate4}-{props.contracts.endDate4}</div>
                     </div>
                     <div>
                         {props.contracts.position4}
@@ -86,20 +86,20 @@ function Canvas(props){
                     Education
                 </div>
 
-                <div className=" my-1">
+                <div className=" my-1 px-2">
                     <div className=" flex justify-between">
                         <div className=" font-medium">{props.contracts.university1}</div>
-                        <div>{props.contracts.coursestart1} - {props.contracts.courseend1}</div>
+                        <div>{props.contracts.coursestart1}-{props.contracts.courseend1}</div>
                     </div>
                     <div>
                         {props.contracts.degree1}
                     </div>
                 </div>
 
-                <div className=" my-1">
+                <div className=" my-1 px-2">
                     <div className=" flex justify-between">
                         <div className=" font-medium">{props.contracts.university2}</div>
-                        <div>{props.contracts.coursestart2} - {props.contracts.courseend2}</div>
+                        <div>{props.contracts.coursestart2}-{props.contracts.courseend2}</div>
                     </div>
                     <div>
                         {props.contracts.degree2}

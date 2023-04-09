@@ -5,11 +5,12 @@ function Header(){
     function handleDownload() {
         let element = document.getElementById('element-to-print')
         let opt = {
-            margin:       1,
+            margin:       0.5,
             filename:     'resume.pdf',
             image:        { type: 'jpeg', quality: 1 },
             html2canvas:  { scale: 2 },
-            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' },
+            enableLinks: true
         };
         html2pdf().set(opt).from(element).save()
     }
