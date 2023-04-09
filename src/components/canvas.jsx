@@ -47,7 +47,7 @@ function Canvas(props){
                         <div className=" font-medium">{props.contracts.company1}</div>
                         <div>{props.contracts.startDate1}-{props.contracts.endDate1}</div>
                     </div>
-                    <div className=" text-sm">
+                    <div>
                         {props.contracts.position1}
                     </div>
                 </div>
