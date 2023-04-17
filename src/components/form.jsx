@@ -1,8 +1,10 @@
 import React from "react";
 import { useState } from "react";
+import Educational from "./educational";
 
 function Form({addContract}) {
     const [details, UpdateDetails] = useState({})
+    const [eduid, seteduid] = useState(1)
 
     function handleChange(event) {
         UpdateDetails({...details, [event.target.name]:event.target.value})
@@ -202,35 +204,12 @@ function Form({addContract}) {
                     onChange={handleChange}
                     className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
                 /><br/>
-
-                <input
-                    name="university2"
-                    type="text"
-                    placeholder="University Name"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="degree2"
-                    type="text"
-                    onChange={handleChange}
-                    placeholder="Degree"
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="coursestart2"
-                    type="text"
-                    placeholder="Start Date"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="courseend2"
-                    type="text"
-                    placeholder="End Date"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
+                <button
+                    onClick={()=>{
+                        Educational(eduid)
+                        seteduid(eduid+1)
+                    }}
+                >Add Field</button>
                 <button type="submit" className=" my-2 rounded-lg border border-black px-5 py-1 transform transition duration-300 hover:scale-110 hover:bg-gray-300">
                     Submit
                 </button>

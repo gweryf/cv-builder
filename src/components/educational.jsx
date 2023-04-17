@@ -1,12 +1,15 @@
 import React, {useState} from "react";
+function Educational(props) {
+    const [val, setval] = useState({})
+    const handleAdd = ()=>{
+        
+    }
 
-function Educational() {
     return(
         <>
-            <input
-                type="text"
-                  
-            />
+            <button onClick={()=>{handleAdd}}>Add Field</button>
         </>
     )
 }
+
+export default Educational
