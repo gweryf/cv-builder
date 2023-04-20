@@ -176,40 +176,7 @@ function Form({addContract}) {
 
                 {/* Education Details   */}
                 <h3 className=" text-xl">Education</h3>
-                <input
-                    name="university1"
-                    type="text"
-                    placeholder="University Name"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="degree1"
-                    type="text"
-                    onChange={handleChange}
-                    placeholder="Degree"
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="coursestart1"
-                    type="text"
-                    placeholder="Start Date"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="courseend1"
-                    type="text"
-                    placeholder="End Date"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <button
-                    onClick={()=>{
-                        Educational(eduid)
-                        seteduid(eduid+1)
-                    }}
-                >Add Field</button>
+                <Educational/>
                 <button type="submit" className=" my-2 rounded-lg border border-black px-5 py-1 transform transition duration-300 hover:scale-110 hover:bg-gray-300">
                     Submit
                 </button>
