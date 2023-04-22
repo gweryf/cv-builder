@@ -6,6 +6,23 @@ import github from "../assets/GitHub-Mark.png"
 import email from "../assets/email.png"
 
 function Canvas(props){
+
+    const educationDetails = []
+
+    for( let i = 0; i<props.contracts.eduId;i++){
+        educationDetails.push(
+            <div className=" my-1 px-2">
+                <div className=" flex justify-between">
+                    <div className=" font-medium">{props.contracts.uniname0}</div>
+                    <div>{props.contracts.startCourse0}-{props.contracts.endCourse0}</div>
+                </div>
+                <div>
+                    {props.contracts.degree0}
+                </div>
+            </div>
+        )
+    }
+
     return(
         <div className=" border p-4 w-full md:mx-20 self-start shadow-lg my-7">
             <div id="element-to-print">
@@ -85,26 +102,8 @@ function Canvas(props){
                 <div className=" text-xl font-semibold py-3 border-b border-gray-700">
                     Education
                 </div>
-
-                <div className=" my-1 px-2">
-                    <div className=" flex justify-between">
-                        <div className=" font-medium">{props.contracts.uniname0}</div>
-                        <div>{props.contracts.startCourse0}-{props.contracts.endCourse0}</div>
-                    </div>
-                    <div>
-                        {props.contracts.degree0}
-                    </div>
-                </div>
-
-                <div className=" my-1 px-2">
-                    <div className=" flex justify-between">
-                        <div className=" font-medium">{props.contracts.uniname1}</div>
-                        <div>{props.contracts.startCourse1}-{props.contracts.endCourse1}</div>
-                    </div>
-                    <div>
-                        {props.contracts.degree1}
-                    </div>
-                </div>
+                {educationDetails}
+                
             </div>
         </div>
     )

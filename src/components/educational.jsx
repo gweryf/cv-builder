@@ -9,7 +9,7 @@ function Educational({addeduDetails}) {
     }
 
     const handleChange = (event) => {
-        seteduDetails({...eduDetails, [event.target.name]:event.target.value})
+        seteduDetails({...eduDetails, eduID , [event.target.name]:event.target.value})
     }
 
     useEffect(()=>{
