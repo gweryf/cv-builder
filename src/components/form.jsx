@@ -4,11 +4,14 @@ import Educational from "./educational";
 
 function Form({addContract}) {
     const [details, UpdateDetails] = useState({})
-    const [eduid, seteduid] = useState(1)
 
     function handleChange(event) {
         UpdateDetails({...details, [event.target.name]:event.target.value})
     }
+
+    function addeduDetails(eduDetails){
+        UpdateDetails(eduDetails)
+      }
 
     function handleSubmit(event) {
         event.preventDefault()
@@ -176,7 +179,7 @@ function Form({addContract}) {
 
                 {/* Education Details   */}
                 <h3 className=" text-xl">Education</h3>
-                <Educational/>
+                <Educational addeduDetails={addeduDetails} />
                 <button type="submit" className=" my-2 rounded-lg border border-black px-5 py-1 transform transition duration-300 hover:scale-110 hover:bg-gray-300">
                     Submit
                 </button>

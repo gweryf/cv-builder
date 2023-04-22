@@ -88,21 +88,21 @@ function Canvas(props){
 
                 <div className=" my-1 px-2">
                     <div className=" flex justify-between">
-                        <div className=" font-medium">{props.contracts.university1}</div>
-                        <div>{props.contracts.coursestart1}-{props.contracts.courseend1}</div>
+                        <div className=" font-medium">{props.contracts.uniname0}</div>
+                        <div>{props.contracts.startCourse0}-{props.contracts.endCourse0}</div>
                     </div>
                     <div>
-                        {props.contracts.degree1}
+                        {props.contracts.degree0}
                     </div>
                 </div>
 
                 <div className=" my-1 px-2">
                     <div className=" flex justify-between">
-                        <div className=" font-medium">{props.contracts.university2}</div>
-                        <div>{props.contracts.coursestart2}-{props.contracts.courseend2}</div>
+                        <div className=" font-medium">{props.contracts.uniname1}</div>
+                        <div>{props.contracts.startCourse1}-{props.contracts.endCourse1}</div>
                     </div>
                     <div>
-                        {props.contracts.degree2}
+                        {props.contracts.degree1}
                     </div>
                 </div>
             </div>
