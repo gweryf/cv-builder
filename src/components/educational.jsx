@@ -12,20 +12,18 @@ function Educational({addeduDetails}) {
         seteduDetails({...eduDetails, eduID , [event.target.name]:event.target.value})
     }
 
+    const delHandle = ()=>{
+        seteduID(eduID-1)
+        seteduDetails({...eduDetails,eduID})
+        console.log(eduID);
+    }
+
     useEffect(()=>{
         addeduDetails(eduDetails)
     },[eduDetails])
 
     for (let i = 0; i < eduID; i++) {
-        const delHandle = ()=>{
-            if(eduID>0) {
-                delete eduDetails[`uniname${i}`]
-                delete eduDetails[`degree${i}`]
-                delete eduDetails[`startCourse${i}`]
-                delete eduDetails[`endCourse${i}`]
-                seteduID(eduID-1)
-            }
-        }
+        
         itemsList.push(
             <>
                 <input
@@ -56,9 +54,6 @@ function Educational({addeduDetails}) {
                     onChange={handleChange}
                     className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
                 /><br/>
-                <button onClick={delHandle} className=" my-2 rounded-lg border border-black px-5 py-1 transform transition duration-300 hover:scale-110 hover:bg-gray-300">
-                    Delete Field
-                </button><br/>
             </>
         );
     }
@@ -68,6 +63,9 @@ function Educational({addeduDetails}) {
             {itemsList}
             <button onClick={addHandle} className=" my-2 rounded-lg border border-black px-5 py-1 transform transition duration-300 hover:scale-110 hover:bg-gray-300">
                 Add Field
+            </button><br/>
+            <button onClick={delHandle} className=" my-2 rounded-lg border border-black px-5 py-1 transform transition duration-300 hover:scale-110 hover:bg-gray-300">
+                Delete Field
             </button><br/>
         </>
     )

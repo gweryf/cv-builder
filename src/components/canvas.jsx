@@ -6,18 +6,19 @@ import github from "../assets/GitHub-Mark.png"
 import email from "../assets/email.png"
 
 function Canvas(props){
-
+    let canvasData = props.contracts
+    console.log(canvasData);
     const educationDetails = []
-
-    for( let i = 0; i<props.contracts.eduId;i++){
+    console.log(Number(props.contracts.eduID));
+    for( let i = 0; i<canvasData.eduID;i++){
         educationDetails.push(
             <div className=" my-1 px-2">
                 <div className=" flex justify-between">
-                    <div className=" font-medium">{props.contracts.uniname0}</div>
-                    <div>{props.contracts.startCourse0}-{props.contracts.endCourse0}</div>
+                    <div className=" font-medium">{canvasData[`uniname${i}`]}</div>
+                    <div>{canvasData[`startCourse${i}`]}-{canvasData[`endCourse${i}`]}</div>
                 </div>
                 <div>
-                    {props.contracts.degree0}
+                    {canvasData[`degree${i}`]}
                 </div>
             </div>
         )
