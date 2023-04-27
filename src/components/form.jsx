@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Educational from "./educational";
+import Experience from "./experience";
 
 function Form({addContract}) {
     const [details, UpdateDetails] = useState({})
@@ -11,7 +12,11 @@ function Form({addContract}) {
 
     function addeduDetails(eduDetails){
         UpdateDetails({...details, eduDetails})
-      }
+    }
+
+    function addexpDetails(expDetails){
+        UpdateDetails({...details, expDetails})
+    }
 
     function handleSubmit(event) {
         event.preventDefault()
@@ -64,118 +69,7 @@ function Form({addContract}) {
 
                 {/* Work Experience */}
                 <h3 className=" text-xl">Experience</h3>
-                <input
-                    name="company1"
-                    type="text"
-                    placeholder="Company Name"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="position1"
-                    type="text"
-                    onChange={handleChange}
-                    placeholder="About your Position"
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="startDate1"
-                    type="text"
-                    placeholder="Start Date"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="endDate1"
-                    type="text"
-                    placeholder="End Date"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="company2"
-                    type="text"
-                    placeholder="Company Name"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="position2"
-                    type="text"
-                    onChange={handleChange}
-                    placeholder="About your Position"
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="startDate2"
-                    type="text"
-                    placeholder="Start Date"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="endDate2"
-                    type="text"
-                    placeholder="End Date"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="company3"
-                    type="text"
-                    placeholder="Company Name"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="position3"
-                    type="text"
-                    onChange={handleChange}
-                    placeholder="About your Position"
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="startDate3"
-                    type="text"
-                    placeholder="Start Date"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="endDate3"
-                    type="text"
-                    placeholder="End Date"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="company4"
-                    type="text"
-                    placeholder="Company Name"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="position4"
-                    type="text"
-                    onChange={handleChange}
-                    placeholder="About your Position"
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
-                <input
-                    name="startDate4"
-                    type="text"
-                    placeholder="Start Date"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-red-600"
-                /><br/>
-                <input
-                    name="endDate4"
-                    type="text"
-                    placeholder="End Date"
-                    onChange={handleChange}
-                    className=" my-1 w-full border border-gray-600 px-3 py-1 rounded-lg shadow-sm focus:outline-none focus:border-gray-800"
-                /><br/>
+                <Experience addexpDetails={addexpDetails} />
 
                 {/* Education Details   */}
                 <h3 className=" text-xl">Education</h3>
