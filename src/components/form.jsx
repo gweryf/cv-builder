@@ -10,7 +10,7 @@ function Form({addContract}) {
     }
 
     function addeduDetails(eduDetails){
-        UpdateDetails(eduDetails)
+        UpdateDetails({...details, eduDetails})
       }
 
     function handleSubmit(event) {

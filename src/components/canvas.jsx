@@ -6,24 +6,8 @@ import github from "../assets/GitHub-Mark.png"
 import email from "../assets/email.png"
 
 function Canvas(props){
-    let canvasData = props.contracts
-    console.log(canvasData);
-    const educationDetails = []
-    console.log(Number(props.contracts.eduID));
-    for( let i = 0; i<canvasData.eduID;i++){
-        educationDetails.push(
-            <div className=" my-1 px-2">
-                <div className=" flex justify-between">
-                    <div className=" font-medium">{canvasData[`uniname${i}`]}</div>
-                    <div>{canvasData[`startCourse${i}`]}-{canvasData[`endCourse${i}`]}</div>
-                </div>
-                <div>
-                    {canvasData[`degree${i}`]}
-                </div>
-            </div>
-        )
-    }
-
+    const educationalDetails = props.contracts.eduDetails
+    console.log(educationalDetails);
     return(
         <div className=" border p-4 w-full md:mx-20 self-start shadow-lg my-7">
             <div id="element-to-print">
@@ -103,8 +87,17 @@ function Canvas(props){
                 <div className=" text-xl font-semibold py-3 border-b border-gray-700">
                     Education
                 </div>
-                {educationDetails}
-                
+                {educationalDetails? educationalDetails.map((eduDetail)=>(
+                    <div className=" my-1 px-2">
+                        <div className=" flex justify-between">
+                            <div className=" font-medium">{eduDetail.uniname}</div>
+                            <div>{eduDetail.startCourse}-{eduDetail.endCourse}</div>
+                        </div>
+                            <div>
+                                {eduDetail.degree}
+                            </div>
+                    </div>
+                )):null}
             </div>
         </div>
     )
