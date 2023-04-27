@@ -59,7 +59,7 @@ function Experience({addexpDetails}) {
                 {expDetails.length>1&&
                 (
                     <>
-                        <button onClick={()=>delHandle(index)} className=" my-2 rounded-lg border border-black px-5 py-1 transform transition duration-300 hover:scale-110 hover:bg-gray-300">
+                        <button onClick={()=>delHandle(index)} className=" w-full my-2 rounded-lg border text-white bg-red-600 border-red-600 px-5 py-1 transform transition duration-300 hover:bg-red-500">
                             Delete Field
                         </button><br/>
                     </>
@@ -67,7 +67,7 @@ function Experience({addexpDetails}) {
                 {expDetails.length-1===index && expDetails.length<4 &&
                 (
                     <>
-                        <button onClick={addHandle} className=" my-2 rounded-lg border border-black px-5 py-1 transform transition duration-300 hover:scale-110 hover:bg-gray-300">
+                        <button onClick={addHandle} className=" w-full my-2 rounded-lg border text-white bg-lime-600 border-lime-600 px-5 py-1 transform transition duration-300 hover:bg-lime-500">
                             Add Field
                         </button><br />
                     </>

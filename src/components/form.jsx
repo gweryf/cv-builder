@@ -74,7 +74,7 @@ function Form({addContract}) {
                 {/* Education Details   */}
                 <h3 className=" text-xl">Education</h3>
                 <Educational addeduDetails={addeduDetails} />
-                <button type="submit" className=" my-2 rounded-lg border border-black px-5 py-1 transform transition duration-300 hover:scale-110 hover:bg-gray-300">
+                <button type="submit" className=" w-full my-2 rounded-lg bg-blue-600 text-white border border-blue-500 px-5 py-1 transform transition duration-300 hover:bg-blue-500">
                     Submit
                 </button>
             </form>
