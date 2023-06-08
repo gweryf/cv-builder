@@ -25,7 +25,7 @@
 
 ![image](https://user-images.githubusercontent.com/105338002/230756380-d1c91bdc-79df-4040-80cb-6963bf70baef.png)
 
-Welcome to our CV builder website, where you can create a professional and polished CV in just a few simple steps. We understand that crafting a perfect CV can be a daunting task, which is why our platform offers a simple and user-friendly interface that guides you through the entire process.
+Welcome to my CV builder website, where you can create a professional and polished CV in just a few simple steps. Crafting a perfect CV can be a daunting task, which is why my platform offers a simple and user-friendly interface that guides you through the entire process.
 A CV builder website made using React.js and Tailwind CSS is a modern and intuitive platform designed to help users create professional and polished CVs with ease. React.js is a popular JavaScript library that enables the creation of dynamic and interactive user interfaces, while Tailwind CSS is a utility-first CSS framework that provides a comprehensive set of pre-designed styling options.
 
 ### Built With
